@@ -23,6 +23,7 @@ filetype plugin indent on
 syntax on
 
 " solarized
+set background=dark
 colorscheme solarized
 
 " line numbers
