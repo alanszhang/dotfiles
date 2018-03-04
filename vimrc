@@ -24,9 +24,11 @@ syntax on
 
 " solarized
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
 
 " line numbers
+set relativenumber
 set number
 
 " show file stats
@@ -38,7 +40,7 @@ set visualbell
 
 " correct tabs and whitespace
 set wrap
-set tabstop=4
+set tabstop=2
 set shiftwidth=4
 set softtabstop=4
 set expandtab " spaces not tabs
@@ -65,8 +67,17 @@ set showmatch
 set hlsearch
 set gdefault
 
+" jk to escape
+:imap jk <Esc>
+
+" ctags from all directory
+set tags+=tags;~
+
+" set leader to ,
+:let mapleader = ","
 
 " Map Colemak keys to QWERTY keys (in alphabetical order).
+" left is COLEMAK right is command
 noremap d g
 noremap e k
 noremap f e
