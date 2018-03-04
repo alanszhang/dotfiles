@@ -14,6 +14,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'junegunn/seoul256.vim'
 
 " vundle end
 call vundle#end()
@@ -22,10 +23,21 @@ filetype plugin indent on
 " syntax highlighting
 syntax on
 
-" solarized
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+" Solarized colorscheme (never really got to work)
+" set background=dark
+" let g:solarized_termcolors=256
+" colorscheme solarized
+
+" seoul256 colorscheme
+let g:seoul256_background=233
+colo seoul256
+
+"lightline configuration
+let g:lightline = {
+      \ 'colorscheme': 'seoul256',
+      \ }
+set noshowmode
+
 
 " line numbers
 set relativenumber
@@ -41,8 +53,8 @@ set visualbell
 " correct tabs and whitespace
 set wrap
 set tabstop=2
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab " spaces not tabs
 set noshiftround
 set smarttab
