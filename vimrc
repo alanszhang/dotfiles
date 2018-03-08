@@ -29,7 +29,7 @@ syntax on
 " colorscheme solarized
 
 " seoul256 colorscheme
-let g:seoul256_background=233
+let g:seoul256_background = 235
 colo seoul256
 
 "lightline configuration
